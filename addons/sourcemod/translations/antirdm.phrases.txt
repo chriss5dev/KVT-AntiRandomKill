@@ -48,7 +48,7 @@
   {
 	"#format" "{1:s}"
     "en"    "FF000{1}FFDD00 has been FF0000BANNEDFFDD00 for random-killing multiple teammates in a row!"
-	"es"    "¡FF000{1}FFDD00 ha sido FF0000EXPULSADOFFDD00 for matar a múltiples compañeros a la vez!"
+	"es"    "FF000¡{1}FFDD00 ha sido FF0000EXPULSADOFFDD00 for matar a múltiples compañeros a la vez!"
   }
   "NotifyRDMCommand"
   {
