@@ -4,7 +4,7 @@
   "BannedForever"
   {
     "en"    "You have been permanently banned for random-killing. If this is a mistake, please contact the server owner to be unbanned"
-	"es"    "Haz sido permanentemente expulsado por matar al azar. Si esto es un error, contacta al dueño del servidor para una revisión."
+	"es"    "Has sido permanentemente expulsado por matar al azar. Si esto es un error, contacta al dueño del servidor para una revisión."
   }
   "BannedForMinutes"
   {
@@ -16,7 +16,7 @@
   {
 	"#format" "{1:i}"
     "en"    "You will be unbanned in {1} hours. Don't random-kill"
-	"es"    Podrás volver a unirte en {1} horas. No mates al azar."
+	"es"    "Podrás volver a unirte en {1} horas. No mates al azar."
   }
   "BannedForDays"
   {
@@ -48,7 +48,7 @@
   {
 	"#format" "{1:s}"
     "en"    "FF000{1}FFDD00 has been FF0000BANNEDFFDD00 for random-killing multiple teammates in a row!"
-	"es"    "¡FF000{1}FFDD00 ha sido FF0000EXPULSADOFFDD00 for matar a múltiples compañeros a la vez!"
+	"es"    "¡FF000{1}FFDD00 ha sido FF0000EXPULSADOFFDD00 for matar a múltiples compañeros a la vez!"
   }
   "NotifyRDMCommand"
   {
