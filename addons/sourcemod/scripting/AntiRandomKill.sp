@@ -89,7 +89,6 @@ public void OnMapStart()
 public void LoadAllTranslations()
 {
 	LoadTranslations("antirdm.phrases.txt");
-	LoadTranslations("es/antirdm.phrases.txt");
 }
 
 public void CreateConVars()
@@ -103,7 +102,7 @@ public void CreateConVars()
 	g_cvPunishAmount = CreateConVar("t_rdm_amount_punish", "3", "The amount of score to add to a user that makes incorrect kills, whether intentional or not.", _, true, 0.0);
 	//combat/aggression checking
 	g_cvCombatCheckEnabled = CreateConVar("t_rdm_combat_enabled", "0", "When set to 1, attackers are marked as in-combat for a specified amount of time. Players that are in-combat will not be counted as an RDM if killed, due to self-defense.", _, true, 0.0);
-	g_cvCombatCheckThreshold = CreateConVar("t_rdm_combat_mindmg", "50", "The minimum damage at which an attacker will be marked as in-combat.", _, true, 1.0);
+	g_cvCombatCheckThreshold = CreateConVar("t_rdm_combat_mindmg", "50", "The minimum damage at which an attacker will be marked as in-combat. Kills are automatically considered as in-combat.", _, true, 1.0);
 	g_cvCombatCheckTime = CreateConVar("t_rdm_combat_time", "5", "How long attackers will be marked as in-combat, in seconds.", _, true, 0.5);
 	//dmg sources to be ignored
 	g_cvIgnoreGasNade = CreateConVar("t_rdm_ignore_gasnade", "1", "When set to 1, kills from gas grenades will not count towards RDM score.", _, true, 0.0);
