@@ -59,3 +59,6 @@
 - Players are marked as in-combat for `t_rdm_combat_time` seconds when they deal a minimum of `t_rdm_combat_mindmg` damage or kill another player, assuming `t_rdm_combat_enabled` is set to 1.
 - This feature is not enabled by default, due to the risk of trolls abusing it.
 - This feature tends to increase RDM judgement accuracy by ignoring crossfire and allowing players to eliminate those who kill others at random without consequence.
+
+# Dependency
+https://github.com/chriss5dev/Treason-API/releases
