@@ -24,6 +24,7 @@ ConVar g_cvCombatCheckTime;
 ConVar g_cvIgnoreGasNade;
 ConVar g_cvIgnoreNade;
 ConVar g_cvIgnoreBomb;
+ConVar g_cvEnableInsults;
 char nameBuffer[32];
 char g_BoomSound[PLATFORM_MAX_PATH];
 int g_ExplosionSprite = -1;
@@ -111,6 +112,7 @@ public void CreateConVars()
 	//misc
 	g_cvBanTime = CreateConVar("t_rdm_bantime", "10", "Time (in minutes) to ban users that surpass the ban score. 0 means permanent.", _, true, 0.0);
 	g_cvPunishConfirmedInStages = CreateConVar("t_rdm_punish_confirmed_in_stages", "1", "When set to 1, confirmed roles that teamkill other confirmed roles will skip extra score levels and have their score set straight to the next stage. Default -> Warn -> Punish -> Ban", _, true, 0.0, true, 1.0);
+	g_cvEnableInsults = CreateConVar("t_rdm_insults", "1", "When set to 1, un-serious insults will be displayed in chat upon all auto-bans.", _, true, 0.0, true, 1.0);
 	//g_cvStartPunishTime = CreateConVar("t_rdm_roundstart_time", "3", "0 means disabled. Seconds after the Don's body is found during which non-traitors will be immediately punished for killing. This is intended to prevent immediate RDM on round start, as it is unreasonable someone would know whether who the traitor is within 1-5 seconds.", _, true, 0.0, true, 30.0);
 }
 
@@ -478,7 +480,10 @@ public void TextBan()
 		PrintToChat(i, "%t", "NotifyBan", nameBuffer);
 	}
 	
-	TextInsult();
+	if(g_cvEnableInsults.IntValue == 1)
+	{
+		TextInsult();
+	}
 }
 
 public void TextNotifyRDMCommand()
