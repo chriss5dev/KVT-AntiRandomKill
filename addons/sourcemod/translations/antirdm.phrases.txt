@@ -1,32 +1,33 @@
 "Phrases"
 {
   //ban phrases
+  //note that ban messages automatically have periods appended to them in the game logic
   "BannedForever"
   {
-    "en"    "You have been permanently banned for random-killing. If this is a mistake, please contact the server owner to be unbanned."
-	"es"    "Has sido permanentemente expulsado por matar al azar. Si esto es un error, contacta al dueño del servidor para una revisión."
-    "ro"   "Aţi fost banat permanent pentru omorâre aleatorie. Dacă acest lucru este o eroare, vă rog să contactaţi deţinătorul servărului pentru a vi se şterge banul."
+    "en"    "You have been permanently banned for random-killing. If this is a mistake, please contact the server owner to be unbanned"
+	"es"    "Has sido permanentemente expulsado por matar al azar. Si esto es un error, contacta al dueño del servidor para una revisión"
+    "ro"   "Aţi fost banat permanent pentru omorâre aleatorie. Dacă acest lucru este o eroare, vă rog să contactaţi deţinătorul servărului pentru a vi se şterge banul"
   }
   "BannedForMinutes"
   {
 	"#format" "{1:i}"
-    "en"    "You will be unbanned in {1} minutes. Don't random-kill."
-	"es"    "Podrás volver a unirte en {1} minutos. No mates al azar."
-    "ro"    "Vi se va şterge banul in {1} minute. Nu mai omorâţi aleatoriu."
+    "en"    "You will be unbanned in {1} minutes. Don't random-kill"
+	"es"    "Podrás volver a unirte en {1} minutos. No mates al azar"
+    "ro"    "Vi se va şterge banul in {1} minute. Nu mai omorâţi aleatoriu"
   }
   "BannedForHours"
   {
 	"#format" "{1:i}"
-    "en"    "You will be unbanned in {1} hours. Don't random-kill."
-	"es"    "Podrás volver a unirte en {1} horas. No mates al azar."
-    "ro"    "Vi se va şterge banul in {1} ore. Nu mai omorâţi aleatoriu."
+    "en"    "You will be unbanned in {1} hours. Don't random-kill"
+	"es"    "Podrás volver a unirte en {1} horas. No mates al azar"
+    "ro"    "Vi se va şterge banul in {1} ore. Nu mai omorâţi aleatoriu"
   }
   "BannedForDays"
   {
 	"#format" "{1:i}"
-    "en"    "You will be unbanned in {1} days. Don't random-kill."
-	"es"    "Podrás volver a unirte en {1} días. No mates al azar."
-    "ro"    "Vi se va şterge banul in {1} zile. Nu mai omorâţi aleatoriu."
+    "en"    "You will be unbanned in {1} days. Don't random-kill"
+	"es"    "Podrás volver a unirte en {1} días. No mates al azar"
+    "ro"    "Vi se va şterge banul in {1} zile. Nu mai omorâţi aleatoriu"
   }
   
   //warning phrases
