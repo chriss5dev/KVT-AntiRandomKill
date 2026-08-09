@@ -1,28 +1,33 @@
 "Phrases"
 {
   //ban phrases
+  //note that ban messages automatically have periods appended to them in the game logic
   "BannedForever"
   {
     "en"    "You have been permanently banned for random-killing. If this is a mistake, please contact the server owner to be unbanned"
-	"es"    "Has sido permanentemente expulsado por matar al azar. Si esto es un error, contacta al dueño del servidor para una revisión."
+	"es"    "Has sido permanentemente expulsado por matar al azar. Si esto es un error, contacta al dueño del servidor para una revisión"
+    "ro"   "Aţi fost banat permanent pentru omorâre aleatorie. Dacă acest lucru este o eroare, vă rog să contactaţi deţinătorul servărului pentru a vi se şterge banul"
   }
   "BannedForMinutes"
   {
 	"#format" "{1:i}"
     "en"    "You will be unbanned in {1} minutes. Don't random-kill"
-	"es"    "Podrás volver a unirte en {1} minutos. No mates al azar."
+	"es"    "Podrás volver a unirte en {1} minutos. No mates al azar"
+    "ro"    "Vi se va şterge banul in {1} minute. Nu mai omorâţi aleatoriu"
   }
   "BannedForHours"
   {
 	"#format" "{1:i}"
     "en"    "You will be unbanned in {1} hours. Don't random-kill"
-	"es"    "Podrás volver a unirte en {1} horas. No mates al azar."
+	"es"    "Podrás volver a unirte en {1} horas. No mates al azar"
+    "ro"    "Vi se va şterge banul in {1} ore. Nu mai omorâţi aleatoriu"
   }
   "BannedForDays"
   {
 	"#format" "{1:i}"
     "en"    "You will be unbanned in {1} days. Don't random-kill"
-	"es"    "Podrás volver a unirte en {1} días. No mates al azar."
+	"es"    "Podrás volver a unirte en {1} días. No mates al azar"
+    "ro"    "Vi se va şterge banul in {1} zile. Nu mai omorâţi aleatoriu"
   }
   
   //warning phrases
@@ -30,11 +35,13 @@
   {
     "en"    "You will be punished if you keep random-killing!"
 	"es"  "¡Serás castigado si sigues matando al azar!"
+    "ro"    "Veţi fi pedepsit, dacă mai omorâţi aleatoriu!"
   }
   "WarningBan"
   {
     "en"    "You will be BANNED if you keep random-killing!"
 	"es"  "¡Serás EXPULSADO si sigues matando al azar!"
+    "ro"    "Veţi fi BANAT, dacă mai omorâţi aleatoriu!"
   }
   
   //global chat notification phrases
@@ -43,17 +50,20 @@
 	"#format" "{1:s}"
     "en"    "FF0000{1}FFFF00 has FF0000EXPLODEDFFFF00 for random-killing too much..."
 	"es"    "FF0000{1}FFFF00 ha FF0000EXPLOTADOFFFF00 por matar muchas personas al azar..."
+    "ro"    "FF0000{1}FFFF00 a FF0000EXPLODATFFFF00 pentru omorâre aleatorie excesivă..."
   }
   "NotifyBan"
   {
 	"#format" "{1:s}"
     "en"    "FF000{1}FFDD00 has been FF0000BANNEDFFDD00 for random-killing multiple teammates in a row!"
 	"es"    "FF000¡{1}FFDD00 ha sido FF0000EXPULSADOFFDD00 for matar a múltiples compañeros a la vez!"
+    "ro"    "FF000{1}FFDD00 a fost FF0000BANATFFDD00 pentru omorâre aleatorie a mai multor aliaţi în acelaşi timp!"
   }
   "NotifyRDMCommand"
   {
     "en"    "## FFFF00Say FF0000\"!rdm\"FFFF00 in chat to check your random-kill score. ##"
 	"es"    "## FFFF00Escribe FF0000"!rdm"FFFF00 en el chat para revisar tus puntos de RDM. ##"
+    "ro"    "## FFFF00Scrie FF0000\"!rdm\"FFFF00 în chat pentru aţi verifica scorul de omorâre aleatorie. ##" 
   }
   
   //stupid insult phrases for ragebait purposes
@@ -62,18 +72,21 @@
 	"#format" "{1:s}"
     "en"    "FFAA00Don't be like {1}..."
 	"es"    "FFAA00No seas como {1}..."
+    "ro"    "FFAA00Nu fiţi ca {1}..."
   }
   "Insult2"
   {
 	"#format" "{1:s}"
     "en"    "FFAA00Maybe they'll go shower instead..."
 	"es"    "FFAA00Tal vez irá a tomarse una ducha..."
+    "ro"    "FFAA00Ar fi mai bine să se ducă la duşuri..."
   }
   "Insult3"
   {
 	"#format" "{1:s}"
     "en"    "FFAA00Apparently, exploding wasn't enough for {1}..."
 	"es"    "FFAA00Aparentemente, explotar no fue suficiente para {1}..."
+    "ro"    "FFAA00Aparent, explodarea n-a fost suficient pentru {1}..."
   }
   
   //!rdm command related phrases
@@ -82,21 +95,25 @@
 	"#format" "{1:i},{2:i},{3:i}"
 	"en"	"FFFF00You have FF0000{1}FFFF00 RDM score. Players are punished at 00FFFF{2}FFFF00 score and banned at 00FFFF{3}FFFF00 score."
 	"es"	"FFFF00Tienes FF0000{1}FFFF00 puntos de RDM. Serás castigado a los 00FFFF{2}FFFF00 puntos y expulsado a los 00FFFF{3}FFFF00 puntos."
+    "ro"	"FFFF00Aveţi FF0000{1}FFFF00 puncte de RDM. Jucătorii sunt pedepsiţi la 00FFFF{2}FFFF00 puncte şi banaţi la 00FFFF{3}FFFF00 puncte."
   }
   "ScoreForgiveReset"
   {
 	"en"	"FFFF00Players get their score reset to 00FFFF0FFFF00 for making a correct kill."
-	"es"	"FFFF00Tu puntaje es reseteado a 00FFFF0FFFF00 si haces una kill correcta"
+	"es"	"FFFF00Tu puntaje es reseteado a 00FFFF0FFFF00 si haces una kill correcta."
+    "ro"	"FFFF00Jucătorii vor avea punctajul resetat la 00FFFF0FFFF00 pentru o ucidere corectă făcută."
   }
   "ScoreForgive"
   {
 	"#format" "{1:i}"
 	"en"	"FFFF00Players get 00FFFF{1}FFFF00 score removed for making a correct kill."
 	"es"	"FFFF00Te restan 00FFFF{1}FFFF00 puntos si haces una kill correcta."
+    "ro"	"FFFF00Jucătorii primesc 00FFFF{1}FFFF00 puncte scoase pentru o ucidere corectă făcută."
   }
   "ScorePunishmentStages"
   {
 	"en"	"FFFF00RDM punishments escalate 00FFFFimmediatelyFFFF00 when kills are against confirmed teammates."
 	"es"	"FFFF00Los castigos se vuelven más fuertes 00FFFFinmediatamenteFFFF00 cuando matas a un Inocente confirmado."
+    "ro"	"FFFF00Pedepsele de ucidere aleatorie se vor înrăutăţi 00FFFFimmediatFFFF00 când uciderile sunt făcute împotriva aliaţilor confirmaţi."
   }
 }
