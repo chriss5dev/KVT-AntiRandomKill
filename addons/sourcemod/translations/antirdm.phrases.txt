@@ -108,7 +108,7 @@
 	"#format" "{1:i}"
 	"en"	"FFFF00Players get 00FFFF{1}FFFF00 score removed for making a correct kill."
 	"es"	"FFFF00Te restan 00FFFF{1}FFFF00 puntos si haces una kill correcta."
-    "ro"	"FFFF00Jucătorii primesc 00FFFF{1}FFFF00 puncte scoase pentru o ucidere correctă făcută."
+    "ro"	"FFFF00Jucătorii primesc 00FFFF{1}FFFF00 puncte scoase pentru o ucidere corectă făcută."
   }
   "ScorePunishmentStages"
   {
