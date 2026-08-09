@@ -38,6 +38,9 @@
 `t_rdm_punish_confirmed_in_stages`
 - When set to 1, confirmed roles that teamkill other confirmed roles will skip extra score levels and have their score set straight to the next stage. Default -> Warn -> Punish -> Ban
 
+`t_rdm_insults`
+- When set to 1, un-serious insults will be displayed in chat upon all auto-bans.
+
 # Design Logic
 ## RDM Score
 #### Score events
