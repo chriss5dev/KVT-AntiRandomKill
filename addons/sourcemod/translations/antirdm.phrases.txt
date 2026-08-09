@@ -101,7 +101,7 @@
   {
 	"en"	"FFFF00Players get their score reset to 00FFFF0FFFF00 for making a correct kill."
 	"es"	"FFFF00Tu puntaje es reseteado a 00FFFF0FFFF00 si haces una kill correcta."
-    "ro"	"FFFF00Jucătorii vor avea punctajul resetat la 00FFFF0FFFF00 pentru o ucidere correctă făcută."
+    "ro"	"FFFF00Jucătorii vor avea punctajul resetat la 00FFFF0FFFF00 pentru o ucidere corectă făcută."
   }
   "ScoreForgive"
   {
