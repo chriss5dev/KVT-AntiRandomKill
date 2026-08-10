@@ -152,7 +152,7 @@ public void OnClientCookiesCached(int client)
 public Action OnTakeDamage(int victim, int &attacker, int &inflictor, float &damage, int &damagetype)
 {
 	// If the hit is going to kill them, store the victim index
-    if (damage >= GetClientHealth(victim) && victim != 0 && attacker != 0)
+    if (damage >= GetClientHealth(victim) && victim >= 1 && attacker >= 1)
     {
         g_CurrentlyDyingClient = victim;
 		g_CurrentlyKillingClient = attacker;
@@ -175,7 +175,7 @@ public Action OnTakeDamage(int victim, int &attacker, int &inflictor, float &dam
 public void OnTakeDamagePost(int victim, int attacker, int inflictor, float damage, int damagetype)
 {
 	// If the hit is going to kill them, store the victim index
-    if (damage >= GetClientHealth(victim) && victim != 0 && attacker != 0)
+    if (damage >= GetClientHealth(victim) && victim >= 1 && attacker >= 1)
     {
         g_CurrentlyDyingClient = victim;
 		g_CurrentlyKillingClient = attacker;
@@ -219,7 +219,7 @@ public Action E_PlayerDeath(Event event, const char[] name, bool dontBroadcast)
 public void E_PlayerDeath_Post(Event event, const char[] name, bool dontBroadcast)
 {
 	// not suicide and actually players
-	if(g_CurrentlyKillingClient != 0 && g_CurrentlyDyingClient != 0 && g_CurrentlyDyingClient != g_CurrentlyKillingClient && IsClientInGame(g_CurrentlyKillingClient) && IsClientInGame(g_CurrentlyDyingClient))
+	if(g_CurrentlyDyingClient != g_CurrentlyKillingClient && IsClientInGame(g_CurrentlyKillingClient) && IsClientInGame(g_CurrentlyDyingClient))
 	{
 		if(g_KillerTeam + g_VictimTeam > 1 // both have to be at least 1, this means sum is greater than 1 if valid
 		&& g_KillerTeam == g_VictimTeam) // if killer and victim are both innocent or both traitor
