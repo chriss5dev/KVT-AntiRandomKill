@@ -193,7 +193,7 @@ public void OnTakeDamagePost(int victim, int attacker, int inflictor, float dama
 
 public Action E_PlayerDeath(Event event, const char[] name, bool dontBroadcast)
 {
-	if((g_CurrentlyKillingClient > 0 && g_CurrentlyKillingClient < MAXPLAYERS + 2) && (g_CurrentlyDyingClient > 0 && g_CurrentlyDyingClient < MAXPLAYERS + 2) && IsClientInGame(g_CurrentlyKillingClient) && IsClientInGame(g_CurrentlyDyingClient))
+	if((g_CurrentlyKillingClient > 0 && g_CurrentlyKillingClient <= MaxClients) && (g_CurrentlyDyingClient > 0 && g_CurrentlyDyingClient <= MaxClients) && IsClientInGame(g_CurrentlyKillingClient) && IsClientInGame(g_CurrentlyDyingClient))
 	{
 		g_KillerRole = GetClientRole(g_CurrentlyKillingClient);
 		g_VictimRole = GetClientRole(g_CurrentlyDyingClient);
