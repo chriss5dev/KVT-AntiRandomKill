@@ -70,7 +70,7 @@
   "NotifyRDMCommand"
   {
     "en"    "## FFFF00Say FF0000\"!rdm\"FFFF00 in chat to check your random-kill score. ##"
-	"es"    "## FFFF00Escribe FF0000"!rdm"FFFF00 en el chat para revisar tus puntos de RDM. ##"
+	"es"    "## FFFF00Escribe FF0000\"!rdm\"FFFF00 en el chat para revisar tus puntos de RDM. ##"
     "ro"    "## FFFF00Scrie FF0000\"!rdm\"FFFF00 în chat pentru aţi verifica scorul de omorâre aleatorie. ##" 
 	"ru"    "## FFFF00Скажы FF0000\"!rdm\"FFFF00 вы можете посмотреть свой сщет рандомных килов в чате. ##"
   }
