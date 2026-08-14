@@ -545,8 +545,8 @@ public Action CmdCheckScore(int client, int args)
 	int banScore = g_cvBanScore.IntValue;
 	int forgiveAmount = g_cvForgiveAmount.IntValue;
 	
-	char message[128];
-	char message2[128];
+	char message[256];
+	char message2[256];
 	Format(message, sizeof(message), "%T", "ScoreCheck", client, g_RdmScore[client], punishScore, banScore);
 	PrintToChat(client, message);
 	
