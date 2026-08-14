@@ -38,7 +38,7 @@ public Plugin myinfo =
 	name = "AntiRandomKill",
 	author = "chriss5",
 	description = "Punishes random-killing in Treason.",
-	version = "1.0",
+	version = "1.0.1",
 	url = "https://github.com/chriss5dev/KVT-AntiRandomKill"
 };
 
@@ -227,7 +227,7 @@ public void E_PlayerDeath_Post(Event event, const char[] name, bool dontBroadcas
 			// rdm unconfirmed
 			else 
 			{
-				if(g_cvCombatCheckEnabled.IntValue == 0 || !g_InCombat[g_CurrentlyKillingClient])
+				if(g_cvCombatCheckEnabled.IntValue == 0 || !g_InCombat[g_CurrentlyDyingClient])
 				{
 					ClientRDM(g_CurrentlyKillingClient);
 				}
