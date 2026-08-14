@@ -161,6 +161,9 @@ public Action OnTakeDamage(int victim, int &attacker, int &inflictor, float &dam
 			g_InflictorName = "invalid";
 			LogError("[AntiRandomKill] GetEntityClassname of inflictor failed!");
 		}
+		
+		//also mark killing shots as in combat
+		MarkClientInCombat(attacker);
     }
 	
 	// If the hit is above or equal to the CombatCheckThreshold, mark the attacker as "InCombat"
@@ -170,25 +173,6 @@ public Action OnTakeDamage(int victim, int &attacker, int &inflictor, float &dam
     }
 	
 	return Plugin_Continue;
-}
-
-public void OnTakeDamagePost(int victim, int attacker, int inflictor, float damage, int damagetype)
-{
-	// If the hit is going to kill them, store the victim index
-    if (damage >= GetClientHealth(victim) && victim >= 1 && attacker >= 1)
-    {
-        g_CurrentlyDyingClient = victim;
-		g_CurrentlyKillingClient = attacker;
-		
-		//also mark killing shots as in combat
-		MarkClientInCombat(attacker);
-    }
-	
-	// If the hit is above or equal to the CombatCheckThreshold, mark the attacker as "InCombat"
-	if (damage >= g_cvCombatCheckThreshold.IntValue && victim > 0 && attacker > 0 && IsClientInGame(victim) && IsClientInGame(attacker))
-    {
-		MarkClientInCombat(attacker);
-    }
 }
 
 public Action E_PlayerDeath(Event event, const char[] name, bool dontBroadcast)
