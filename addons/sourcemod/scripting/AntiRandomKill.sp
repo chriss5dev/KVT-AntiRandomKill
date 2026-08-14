@@ -219,7 +219,14 @@ public Action E_PlayerDeath(Event event, const char[] name, bool dontBroadcast)
 public void E_PlayerDeath_Post(Event event, const char[] name, bool dontBroadcast)
 {
 	// not suicide and actually players
-	if(g_CurrentlyDyingClient != g_CurrentlyKillingClient && IsClientInGame(g_CurrentlyKillingClient) && IsClientInGame(g_CurrentlyDyingClient))
+	if
+	(
+		g_CurrentlyDyingClient > 0
+	&&	g_CurrentlyKillingClient > 0
+	&&	g_CurrentlyDyingClient != g_CurrentlyKillingClient
+	&&	IsClientInGame(g_CurrentlyKillingClient)
+	&&	IsClientInGame(g_CurrentlyDyingClient)
+	)
 	{
 		if(g_KillerTeam + g_VictimTeam > 1 // both have to be at least 1, this means sum is greater than 1 if valid
 		&& g_KillerTeam == g_VictimTeam) // if killer and victim are both innocent or both traitor
