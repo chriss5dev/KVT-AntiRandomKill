@@ -156,7 +156,7 @@ public Action OnTakeDamage(int victim, int &attacker, int &inflictor, float &dam
     {
         g_CurrentlyDyingClient = victim;
 		g_CurrentlyKillingClient = attacker;
-		if(!GetEntityClassname(inflictor, g_InflictorName, sizeof(g_InflictorName)))
+		if(inflictor >= 1 && !GetEntityClassname(inflictor, g_InflictorName, sizeof(g_InflictorName)))
 		{
 			g_InflictorName = "invalid";
 			LogError("[AntiRandomKill] GetEntityClassname of inflictor failed!");
